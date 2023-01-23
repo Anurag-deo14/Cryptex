@@ -1,6 +1,7 @@
 import { Navbar, Welcome, Footer, Services, Transactions } from "./components"
 import Need from "./components/Need"
 import Map from "./components/Map"
+import Team from "./components/Team"
 const App = () => {
 
 
@@ -13,6 +14,7 @@ const App = () => {
         <Need/>
         <Transactions />
         <Map/>
+        <Team/>
         <Footer />
         </div>
     </div>

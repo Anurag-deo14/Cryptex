@@ -24,16 +24,11 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-  const showToastMessage1 = () => {
-    toast.success('Successfully Donated !', {
+  const showToastMessage = () => {
+    toast.success('Successfully Done !', {
         position: toast.POSITION.BOTTOM_RIGHT
     });
   };
-  const showToastMessage2 = () => {
-    toast.success('Sent Successfully !', {
-        position: toast.POSITION.BOTTOM_RIGHT
-    });
-};
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
   const [toggle, setToggle] = useState(true);
   const [togge, setTogge] = useState(true);
@@ -51,6 +46,7 @@ const Welcome = () => {
     if (!addressTo || !amount || !keyword || !message) return;
 
     sendTransaction();
+    showToastMessage();
   };
 
   return (
@@ -145,7 +141,7 @@ const Welcome = () => {
                   type="button"
                   onClick={() => {
                     handleSubmit();
-                    showToastMessage2();
+                    
                   }}
                   className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
                 >
@@ -169,7 +165,6 @@ const Welcome = () => {
                   type="button"
                   onClick={() => {
                     handleSubmit();
-                    showToastMessage1();
                   }}
                   className="text-white w-full mt-2 border-[1px] p-2 border-[bg-slate-300] hover:bg-gray-500 rounded-full cursor-pointer"
                 >
