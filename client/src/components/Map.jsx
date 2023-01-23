@@ -18,12 +18,13 @@ import logo10 from "../assets/logo10.png"
 const Map = () => {
   return (
     <div  id='map' >
-                  <h3 className="text-white text-3xl text-center my-10 pt-16 lg:pt-20">
+                  <h3 className="text-white text-3xl sm:text-5xl text-center my-10 py-10 lg:py-20">
                   Cryptocurrency World Map – Search Interest by Country
           </h3>
           <div className='lg:px-[10rem] px-[1rem] '>
           {/* <img className='my-[1rem]' src={file1} alt="" /> */}
             {/* <img className='my-[1rem]' src={file2} alt="" /> */}
+            <div className='tb-wrapper'>
             <table id="customers">
                 <tr id='customers-head'>
                   <th>Worldwide Search Interest</th>
@@ -81,6 +82,7 @@ const Map = () => {
                   <td>1%</td>
                 </tr>
               </table>
+              </div>
           </div>
     </div>
   )

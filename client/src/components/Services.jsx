@@ -21,22 +21,22 @@ const Services = () => (
   <div className="flex w-full justify-center items-center gradient-bg-services pt-16 lg:pt-20 " id="services">
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
       <div className="flex-1 flex flex-col justify-start items-start">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
-          Services that we
+        <h1 className="text-white text-3xl sm:text-5xl py-2 ">
+          Services That We
           <br />
-          continiously deliver
+          Continuously Deliver
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
-        our company has been involved in projects such as providing housing, food, medical facilities etc, for the upliftment of the needy across the world.
+        Our company has been involved in projects such as providing housing, food, medical facilities etc, for the upliftment of the needy across the world.
         </p>
       </div>
 
       <div className="flex-1 flex flex-col justify-start items-center">
         <ServiceCard
           color="bg-[#2952E3]"
-          title="Security gurantee"
+          title="Security Guarantee"
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and make sure your donation remains secure."
+          subtitle="Security is guaranteed. We always maintain privacy and make sure your donation remains secure."
         />
         <ServiceCard
           color="bg-[#8945F8]"

@@ -44,11 +44,11 @@ const Welcome = () => {
     <div className="flex w-full justify-center items-center pt-16 lg:pt-20 " id="welcome">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-            The World  <br /> needs your Help!!
+          <h1 className="text-3xl sm:text-5xl text-white py-1">
+            The World  <br /> Needs Your Help!!
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            Donate crypto for the needy using Cryptex. <br /> Your donations and support mean something. It means you care, and it can bring a smile to someone’s face.
+            Donate Crypto for the needy using Cryptex. <br /> Your donations and support mean something. It means you care, and it can bring a smile to someone’s face.
           </p>
           {!currentAccount && (
             <button
@@ -113,7 +113,7 @@ const Welcome = () => {
           <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
             <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={handleChange} />
-            <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={handleChange} />
+            <Input placeholder="Keyword (GIF)" name="keyword" type="text" handleChange={handleChange} />
             <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
@@ -131,12 +131,10 @@ const Welcome = () => {
               )}
           </div>:
           <>
-          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism" style={{ 
-      backgroundImage: `url("https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9uYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60")` 
-    }}>
+          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center h-full bg-slate-300 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-300">
             <Input  placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Donate (ETH)" name="amount" type="number" handleChange={handleChange} />
-            <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={handleChange} />
+            <Input placeholder="Keyword (GIF)" name="keyword" type="text" handleChange={handleChange} />
             <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
@@ -147,7 +145,7 @@ const Welcome = () => {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+                  className="text-white w-full mt-2 border-[1px] p-2 border-[bg-slate-300] hover:bg-gray-500 rounded-full cursor-pointer"
                 >
                   Donate now
                 </button>

@@ -23,7 +23,7 @@ const Need = () => (
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
 
     <div className="flex flex-col px-20">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
+        <h1 className="text-white text-3xl sm:text-5xl py-2">
           Need For
           <br />
           Crypto Donation
@@ -37,7 +37,7 @@ const Need = () => (
         
       <div className="p-0 pt-2 m-3 w-full flex flex-col justify-start items-center blue-glassmorphism">
       <MdOutlineGppGood fontSize={35} className="bg-green-600 text-white p-1 rounded-md" />
-      <button type="button" style={mystyle}>Crypto is Here For Good</button>
+      <button type="button" style={mystyle}>Crypto Is Here For Good</button>
         <div class="content" style={mystyle2}>
           <p>Today, mainstream crypto adoption is taking place at a rate similar to the internet in the mid-late 1990s. Sooner or later, cryptocurrencies will be ubiquitous among individual investors and businesses alike. A study from Deloitte found that nearly 75% of businesses plan to accept either cryptocurrency or stablecoin payments over the next two years.</p>
         </div>
@@ -47,7 +47,7 @@ const Need = () => (
       
       <button type="button" style={mystyle}> Crypto Donations Help Diversify Nonprofit Revenue Streams</button>
         <div class="content" style={mystyle2}>
-          <p>crypto helps your organization become less reliant on one or two main methods of fundraising. You’ll have another donor base to connect with and further opportunities to fundraise, providing options no matter the time of year or what’s happening in the world.</p>
+          <p>Crypto helps your organization become less reliant on one or two main methods of fundraising. You’ll have another donor base to connect with and further opportunities to fundraise, providing options no matter the time of year or what’s happening in the world.</p>
         </div>
       </div>
       <div className="p-0 pt-2 m-3 w-full flex flex-col justify-start items-center blue-glassmorphism">

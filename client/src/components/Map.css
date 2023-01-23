@@ -8,6 +8,7 @@
     border: 1px solid #ddd;
     padding: 8px;
   }
+
   
   /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
 
@@ -87,8 +88,20 @@
     margin: 0 1rem;
   }
 
-  
+  @media(width<500px){
+    #customers td, #customers th {
+      font-size: 12px;
+    }
+    td img{
+      height: 15px;
+      margin: 0 0.5rem;
+    }
+  }
 
   .icon-flex{
     display: flex;
+  }
+
+  .tb-wrapper{
+    width: 100%;
   }
