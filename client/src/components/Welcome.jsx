@@ -7,6 +7,9 @@ import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
@@ -21,6 +24,16 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
+  const showToastMessage1 = () => {
+    toast.success('Successfully Donated !', {
+        position: toast.POSITION.BOTTOM_RIGHT
+    });
+  };
+  const showToastMessage2 = () => {
+    toast.success('Sent Successfully !', {
+        position: toast.POSITION.BOTTOM_RIGHT
+    });
+};
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
   const [toggle, setToggle] = useState(true);
   const [togge, setTogge] = useState(true);
@@ -50,10 +63,14 @@ const Welcome = () => {
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Donate Crypto for the needy using Cryptex. <br /> Your donations and support mean something. It means you care, and it can bring a smile to someone’s face.
           </p>
+          <button>Notify</button>
+            
           {!currentAccount && (
             <button
               type="button"
-              onClick={connectWallet}
+              onClick={() => {
+                connectWallet();
+              }}
               className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
             >
               <AiFillPlayCircle className="text-white mr-2" />
@@ -62,6 +79,7 @@ const Welcome = () => {
               </p>
             </button>
           )}
+          <ToastContainer />
 
           <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
             <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
@@ -104,7 +122,9 @@ const Welcome = () => {
           </div>
           <button
                   type="button"
-                  onClick={handleClick}  
+                  onClick={() => {
+                    handleClick();
+                  }}  
                   className="text-white mt-2 mb-4 border-[1px] p-2 px-4 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
                 >
                   Donate
@@ -123,7 +143,10 @@ const Welcome = () => {
               : (
                 <button
                   type="button"
-                  onClick={handleSubmit}
+                  onClick={() => {
+                    handleSubmit();
+                    showToastMessage2();
+                  }}
                   className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
                 >
                   Send now
@@ -144,7 +167,10 @@ const Welcome = () => {
               : (
                 <button
                   type="button"
-                  onClick={handleSubmit}
+                  onClick={() => {
+                    handleSubmit();
+                    showToastMessage1();
+                  }}
                   className="text-white w-full mt-2 border-[1px] p-2 border-[bg-slate-300] hover:bg-gray-500 rounded-full cursor-pointer"
                 >
                   Donate now
