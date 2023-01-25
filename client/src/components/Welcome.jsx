@@ -29,6 +29,12 @@ const Welcome = () => {
         position: toast.POSITION.BOTTOM_RIGHT
     });
   };
+  const showToastMessage2 = () => {
+    toast('Changed!', {
+      icon: '👏',
+      position: toast.POSITION.BOTTOM_RIGHT
+    });
+  };
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
   const [toggle, setToggle] = useState(true);
   const [togge, setTogge] = useState(true);
@@ -120,6 +126,7 @@ const Welcome = () => {
                   type="button"
                   onClick={() => {
                     handleClick();
+                    showToastMessage2();
                   }}  
                   className="text-white mt-2 mb-4 border-[1px] p-2 px-4 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
                 >
