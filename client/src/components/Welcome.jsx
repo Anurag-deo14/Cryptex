@@ -65,7 +65,6 @@ const Welcome = () => {
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Donate Crypto for the needy using Cryptex. <br /> Your donations and support mean something. It means you care, and it can bring a smile to someone’s face.
           </p>
-          <button>Notify</button>
             
           {!currentAccount && (
             <button

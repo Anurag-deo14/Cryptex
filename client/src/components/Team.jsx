@@ -15,7 +15,7 @@ const Team = () => {
             <div className='w-48 pb-10'>
                 <a href="https://linktr.ee/anuragdeo" ><img src={anurag} alt="" className='rounded-[50%] h-[200px] '/></a>
                 <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Anurag Deo</h2></a>
-                <h3 className='text-center pb-4'>Leader</h3>
+                <h3 className='text-center pb-4'>Full-Stack Developer</h3>
                 <div className='flex flex-row justify-evenly'>
                     <a href="https://www.linkedin.com/in/anurag-deo-03410a229/"><SiLinkedin size={30}/></a>
                     <a href="https://github.com/Anurag-deo14"><SiGithub size={30}/></a>
@@ -33,7 +33,7 @@ const Team = () => {
             <div className='w-48 pb-10'>
                 <a href="https://linktr.ee/anuragdeo" ><img src={aniket} alt="" className='rounded-[50%] h-[200px]'/></a>
                 <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Aniket Kumar</h2></a>
-                <h3 className='text-center pb-4'>Front End</h3>
+                <h3 className='text-center pb-4'>Front-End Developer</h3>
                 <div className='flex flex-row justify-evenly'>
                     <a href="https://www.linkedin.com/in/kraniket901/"><SiLinkedin size={30}/></a>
                     <a href="https://github.com/Kraniket901"><SiGithub size={30}/></a>
