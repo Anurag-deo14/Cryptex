@@ -31,6 +31,7 @@ const Navbar = () => {
        <a href="#need" className='mx-4 cursor-pointer'>Need</a>
        <a href="#transactions" className='mx-4 cursor-pointer'>Transactions</a>
        <a href="#map" className='mx-4 cursor-pointer'>Map</a>
+       <a href="#team" className='mx-4 cursor-pointer'>Team</a>
      </ul>
      <div className='flex relative'>
         {

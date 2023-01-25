@@ -8,7 +8,7 @@ import  aniket  from "../../images/aniket.jpeg"
 const Team = () => {
   return (
     <>
-    <div className='text-white px-10 lg:px-60 py-0 lg:py-20'>
+    <div className='text-white px-10 lg:px-60 py-0 lg:py-20' id='team'>
         <h1 className='text-center py-10 text-5xl font-bold'>Our Team</h1>
         <p>We're committed to making email communication easy, and we're always looking for ways to improve our platform. Thank you for choosing our website.Our website is completely open source and also open to contributions. Check github for contributing.</p>
         <div className='flex lg:flex-row flex-col justify-around py-20 pb-5 items-center'>

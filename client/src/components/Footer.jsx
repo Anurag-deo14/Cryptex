@@ -17,6 +17,7 @@ const Footer = () => (
         <a href="#need"><p className="text-white text-base text-center mx-2 cursor-pointer">Need</p></a>
         <a href="#transactions"><p className="text-white text-base text-center mx-2 cursor-pointer">Transactions</p></a>
         <a href="#map"><p className="text-white text-base text-center mx-2 cursor-pointer">Map</p></a>
+        <a href="#team"><p className="text-white text-base text-center mx-2 cursor-pointer">Team</p></a>
       </div>
     </div>
 
