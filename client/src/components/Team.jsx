@@ -1,6 +1,9 @@
 import React from 'react'
 import { SiLinkedin } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
+import  anurag  from "../../images/anurag.jpeg"
+import  ishaan  from "../../images/ishaan.jpeg"
+import  aniket  from "../../images/aniket.jpeg"
 
 const Team = () => {
   return (
@@ -10,30 +13,30 @@ const Team = () => {
         <p>We're committed to making email communication easy, and we're always looking for ways to improve our platform. Thank you for choosing our website.Our website is completely open source and also open to contributions. Check github for contributing.</p>
         <div className='flex lg:flex-row flex-col justify-around py-20 pb-5 items-center'>
             <div className='w-48 pb-10'>
-                <a href="https://linktr.ee/anuragdeo" ><img src="https://avatars.githubusercontent.com/u/25835195?v=4" alt="" className='rounded-[50%] h-[200px]'/></a>
+                <a href="https://linktr.ee/anuragdeo" ><img src={anurag} alt="" className='rounded-[50%] h-[200px] '/></a>
                 <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Anurag Deo</h2></a>
                 <h3 className='text-center pb-4'>Leader</h3>
                 <div className='flex flex-row justify-evenly'>
-                    <a href=""><SiLinkedin size={30}/></a>
-                    <a href=""><SiGithub size={30}/></a>
+                    <a href="https://www.linkedin.com/in/anurag-deo-03410a229/"><SiLinkedin size={30}/></a>
+                    <a href="https://github.com/Anurag-deo14"><SiGithub size={30}/></a>
                 </div>
             </div>
             <div className='w-48 pb-10'>
-                <a href="https://linktr.ee/anuragdeo" ><img src="https://avatars.githubusercontent.com/u/25835195?v=4" alt="" className='rounded-[50%] h-[200px]'/></a>
-                <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Anurag Deo</h2></a>
-                <h3 className='text-center pb-4'>Leader</h3>
+                <a href="https://linktr.ee/anuragdeo" ><img src={ishaan} alt="" className='rounded-[50%] h-[200px]'/></a>
+                <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Ishaan Adarsh</h2></a>
+                <h3 className='text-center pb-4'>Designer</h3>
                 <div className='flex flex-row justify-evenly'>
-                    <a href=""><SiLinkedin size={30}/></a>
-                    <a href=""><SiGithub size={30}/></a>
+                    <a href="https://www.linkedin.com/in/ishaan-adarsh-161a56222/"><SiLinkedin size={30}/></a>
+                    <a href="https://github.com/IshaanAdarsh"><SiGithub size={30}/></a>
                 </div>
             </div>
             <div className='w-48 pb-10'>
-                <a href="https://linktr.ee/anuragdeo" ><img src="https://avatars.githubusercontent.com/u/25835195?v=4" alt="" className='rounded-[50%] h-[200px]'/></a>
-                <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Anurag Deo</h2></a>
-                <h3 className='text-center pb-4'>Leader</h3>
+                <a href="https://linktr.ee/anuragdeo" ><img src={aniket} alt="" className='rounded-[50%] h-[200px]'/></a>
+                <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Aniket Kumar</h2></a>
+                <h3 className='text-center pb-4'>Front End</h3>
                 <div className='flex flex-row justify-evenly'>
-                    <a href=""><SiLinkedin size={30}/></a>
-                    <a href=""><SiGithub size={30}/></a>
+                    <a href="https://www.linkedin.com/in/kraniket901/"><SiLinkedin size={30}/></a>
+                    <a href="https://github.com/Kraniket901"><SiGithub size={30}/></a>
                 </div>
             </div>
 
