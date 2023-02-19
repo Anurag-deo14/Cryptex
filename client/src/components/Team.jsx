@@ -22,9 +22,9 @@ const Team = () => {
                 </div>
             </div>
             <div className='w-48 pb-10'>
-                <a href="https://linktr.ee/anuragdeo" ><img src={ishaan} alt="" className='rounded-[50%] h-[200px]'/></a>
-                <a href="https://linktr.ee/anuragdeo" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Ishaan Adarsh</h2></a>
-                <h3 className='text-center pb-4'>Designer</h3>
+                <a href="https://linktr.ee/IshaanAdarsh" ><img src={ishaan} alt="" className='rounded-[50%] h-[200px]'/></a>
+                <a href="https://linktr.ee/IshaanAdarsh" ><h2 className='transition ease-in-out text-center text-2xl font-bold hover:text-[20px] py-2 pt-4'>Ishaan Adarsh</h2></a>
+                <h3 className='text-center pb-4'>Web3 Developer</h3>
                 <div className='flex flex-row justify-evenly'>
                     <a href="https://www.linkedin.com/in/ishaan-adarsh-161a56222/"><SiLinkedin size={30}/></a>
                     <a href="https://github.com/IshaanAdarsh"><SiGithub size={30}/></a>
